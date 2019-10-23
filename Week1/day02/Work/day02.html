@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <div class="container-fluid" > -->
+        <!-- LAB 01 -->
+        <!-- <h1 class="text-center" >Hello world</h1>
+        <main>l'm a main</main>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, excepturi soluta? At eum voluptates consectetur quo
+            laborum culpa facere nulla?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, beatae.</p> -->
+        
+        <!-- LAB 02 -->
+        <!-- <img  class="img-fluid" src="https://images.unsplash.com/photo-1499084732479-de2c02d45fcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+            alt="unknow woman">
+        <br>
+        <p>Hello Paragraph</p><br>
+        <a href="https://calendar.google.com/calendar/r?pli=1">I'm the Google</a><br>
+        <a href="#">But, i'm here.</a><br>
+        <a href="https://github.com/BlueMagnolia/myappsample">Go to my github</a><br>
+        <a target="_blank" href="#">The same page or dead XP </a><br>
+        <a href="https://github.com/BlueMagnolia/myappsample"><img
+                src="https://images.unsplash.com/photo-1495462911434-be47104d70fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
+                alt="unknow woman"></a>
+        <button class="btn-default" >likes</button>
+        <input type="submit" class="btn btn-default" >
+    </div> -->
+    
+
+    <!-- LAB 03 -->
+    <!-- <ul> I WISH ....
+        <li>MI Computer</li>
+        <ol> I DON'T
+            <li>Work</li>
+        </ol>
+    </ul>
+    <input type="text" placeholder="You should wish s'th">
+    <p>Lorem <em>ipsum dolor sit amet</em> , consectetur <strong>adipisicing elit</strong>. Expedita, <u>architecto!</u> </p> -->
+
+    <!-- LAB 04 -->
+    <!-- <form action="something.php">
+        <input type="text" placeholder="Input here" >
+        <br><br>
+        <input type="required" placeholder="Require" >
+        <br><br>
+        <input type="radio" name="Joy" >Joyful
+        <br><br>
+        <input type="radio" name="Interested" checked >Interested
+        <br><br>
+        <input type="radio" name="Full" >Fulfilled
+        <br><br>
+        <input type="checkbox" name="Checkbox" checked >Just Tested
+        <br><br>
+        <input type="submit" name="Button" >
+        <br><br> -->
+        <!-- <button type="submit" >Submit</button> -->
+        <!-- <br><br>
+        <input type="reset">
+    </form> -->
+
+    <!-- LAB 05 -->
+    <!-- <form action="#">
+        <input type="file" name="fileupload" accept="image/*" >
+    </form>
+    <div>
+        <p>I'm a paragraph</p>
+        <ul>
+            <li>l'm an unordered list</li>
+        </ul>
+        <ol>
+            <li>l'm an ordered list</li>
+        </ol>
+    </div> -->
+
+    <!-- LAB 06 -->
+    <h1 id="result">0</h1>
+    <!-- <button id="plus" onclick="Plus()" >Plus</button> &nbsp; <button id="sub" onclick="Sub()" >Subtract</button> -->
+    <button id="plus" onclick="handle(true)">Plus</button> &nbsp; <button id="sub" onclick="handle(false)">Subtract</button>
+    <script>
+    // let result = 0;
+    
+    //     function Plus() {
+    //         result = result + 1;
+    //         document.getElementById('result').innerHTML = result;
+    //     }
+
+    //     function Sub() {
+    //         result = result - 1;
+    //         document.getElementById('result').innerHTML = result;
+    //     }
+
+    // IN ONE COMMAND 
+        let count = 0, handle = op => document.getElementById('result').innerHTML = op === true ? count+=1 :count -=1
+    </script>
+</body>
+</html>
