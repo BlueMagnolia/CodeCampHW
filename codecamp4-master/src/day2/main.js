@@ -15,7 +15,7 @@ function main(str1, str2) {
 
         for (let i = 0; i < str1.length; i++) {
             // console.log(`i=${i}`)
-            console.log(`str1=${str1[i]} , str2=${str2[i]}`)
+            // console.log(`str1=${str1[i]} , str2=${str2[i]}`)
             this.count = (str1[i] !== str2[i]) ? console.log(this.countStr = this.countStr + 1) : this.countStr
         }
         return this.countStr;
