@@ -5,19 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <script src="lib/jquery-3.4.1.min.js"></script>
-
-    <script>
-        $.ajax({
-                url: 'https://reqres.in/api/login',
-                method: "POST"
-            })
-    </script>
-
-    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     
     <style>
@@ -37,13 +27,50 @@
         }
     </style>
 
+    
 </head>
 <body class="text-center" >
 
     <form action="#" class="form-signin">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-        <label for=""></label>
+        <label for="">Email</label><input type="text"id="email">
+        <br>
+        <label for="">Password</label><input type="text"id="pass"><br>
+        <input type="submit" id="button">
     </form>
     
+    <script>
+        $(document).ready(function () {
+            $("#button").click(() => {
+                let email = $("#email").val()
+                let pass = $("#pass").val()
+
+                let data ={
+                    name : email,
+                    job : pass
+                }
+
+                console.log(data)
+                fetch('https://reqres.in/api/users',{
+                    method: 'POST',
+                    mode: 'cors',
+                    header: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                }).then ( res => res.json())
+                .then(res => { 
+                    console.log(res)
+                    alert(res.id)
+                    // const token = res.id;
+                })
+                    .catch (err => {
+                    console.log('Fetch error')
+                })
+                    // alert(token)
+            })
+        })
+    </script>
+
 </body>
 </html>
