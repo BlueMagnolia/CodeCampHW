@@ -1,0 +1,30 @@
+.container{
+    background: lightblue;
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2 {
+    text-align: center;
+}
+
+.todo {
+    align-items: center;
+    padding-block: 10rem;
+    border: 1px solid black;
+}
+
+.complete {
+    align-items: center;
+    padding-block: 10rem;
+    border: 1px solid black;
+}
+
+ul {
+    list-style: none;
+}
+
+

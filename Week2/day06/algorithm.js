@@ -63,10 +63,16 @@ function diffNum(num1,num2) {
 }
 
 // LAB 3
+maxNumSort(3,4,5);
 
-// function maxNumSort(num1,num2,num3) {
-
-// }
+function maxNumSort(num1,num2,num3) {
+    let arr=[num1,num2,num3];
+    let max = num1;
+    for (i=0; i<3; i++) {
+        max = (max < arr[i]) ? arr[i] : max;
+    }
+    console.log(max);
+}
 
 //  LAB 4
 // loopNum(num3); // 4
@@ -108,8 +114,8 @@ function biToDec(num) {
 }
 
 // LAB 6
-let num8 = 3;
-console.log(primeNumSqrt(num8));
+// let num8 = 3;
+// console.log(primeNumSqrt(num8));
 
 // function primeNum(num) {
 //     if ( num%2 == 0 || num%3 == 0 || num%5 == 0 || num%7 == 0 || num%11 == 0 || num%13 == 0 ) {
