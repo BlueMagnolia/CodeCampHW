@@ -18,9 +18,9 @@ async function work() {
     // });
 
     
-        url: 'https://reqres.in/api/users?page=2',
+        url: 'https://reqres.in/api/users',
         headers: authorize,
-        method: 'PUT',
+        method: 'PUT', // Create - [POST] | Read - [GET] | Update - [PUT] | Delete || CRUD
         body: {
             name: 'morpheus',
             job: 'leader'

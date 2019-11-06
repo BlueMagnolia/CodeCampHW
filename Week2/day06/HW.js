@@ -37,8 +37,21 @@ const test = (arr) => {
 // test(arr);
 
 // 03 | Matrix addition
-let index = [3,3]
-let matrix1 = [1,2,3,3,2,1,1,3,2]
+let index = [[],[],[]]
+let matrix1 = [[1,2,3],[3,2,1],[1,3,2]]
+let matrix2 = [[1,1,1],[1,1,1],[1,1,1]]
+
+function MatrixAdd(index,mat1,mat2) {
+    let newMatrix = index;
+    for (i=0; i<mat1.length; i++) {
+       for (j=0; j<mat2.length; j++) {
+           newMatrix[i][j] = mat1[i][j] + mat2[i][j]
+       }
+    }
+    console.log(newMatrix);
+}
+
+MatrixAdd(index,matrix1,matrix2);
 
 // 04 | Character checker
 
@@ -69,7 +82,7 @@ function pythagorus(a,b) {
 }
 
 // 07 | Herman
-herman(1) 
+// herman(1) 
 
 function herman(r) {
     let imgA = Math.PI*(Math.pow(r,2));
@@ -138,7 +151,7 @@ const trink = (str) => {
 // trink('AA')
 
 // 14 | GCD
-gcd(7,3)
+// gcd(7,3)
 
 function gcd(num1,num2) {
     if (num1 > num2) {gcd = (num1 % num2)};
